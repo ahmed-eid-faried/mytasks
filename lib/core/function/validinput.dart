@@ -1,4 +1,3 @@
- 
 // String? validator(String? val, String? type) {
 //   if (val == "" || val == null) {
 //     // Changed "&&" to "||" for correct validation

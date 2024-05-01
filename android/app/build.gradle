@@ -54,13 +54,13 @@ android {
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
     }
- 
+
     signingConfigs {
         release {
-            storeFile file('mytasks-flutter-keystore.jks') 
-            storePassword 'awdrfyji38923793SKW-/.SD' 
-            keyAlias 'upload'  
-            keyPassword 'awdrfyji38923793SKW-/.SD'  
+            storeFile file('mytasks-flutter-keystore.jks')
+            storePassword 'awdrfyji38923793SKW-/.SD'
+            keyAlias 'upload'
+            keyPassword 'awdrfyji38923793SKW-/.SD'
         }
     }
     buildTypes {

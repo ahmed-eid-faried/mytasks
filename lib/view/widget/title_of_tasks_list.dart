@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
- import 'package:mytasks/view/screen/stopwatch.dart';
+import 'package:mytasks/view/screen/stopwatch.dart';
 
 class TitleOfTasksList extends StatelessWidget {
   const TitleOfTasksList({
@@ -38,5 +38,3 @@ class TitleOfTasksList extends StatelessWidget {
     );
   }
 }
-
- 

@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:mytasks/core/constant/color.dart';
 import 'package:provider/provider.dart';

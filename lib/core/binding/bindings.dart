@@ -16,7 +16,7 @@ List<SingleChildWidget> providers = [
       create: (_) => AddTaskScreenNotifier(tasksListData: TasksListData())),
 // StopwatchModel
   ChangeNotifierProvider<StopwatchModel>(create: (_) => StopwatchModel()),
-  
+
   // ChangeNotifierProvider<AnimationsNotifier>(
   //     create: (context) => AnimationsNotifier()),
 

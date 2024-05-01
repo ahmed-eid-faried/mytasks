@@ -107,10 +107,6 @@ abstract class MyPainter extends CustomPainter {
   bool shouldRebuildSemantics(CustomPainter oldDelegate) => false;
 }
 
-
-
-
-
 class MyPainter1 extends MyPainter {
   @override
   void paint(Canvas canvas, Size size) {

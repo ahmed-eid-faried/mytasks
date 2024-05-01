@@ -144,159 +144,135 @@ class Task {
     );
   }
 }
- 
 
+// Task getItemFromIndices(List<int> indices) {
+//   indices.removeAt(0);
+//   Task currentTask = this;
 
+//   for (final index in indices) {
+//     if (index < 0 || index >= currentTask.subTasks.length) {
+//       return currentTask;
+//     }
+//     currentTask = currentTask.subTasks[index];
+//   }
 
+//   return currentTask;
+// }
 
+// void addSubtaskByIndices(List<int> indices, Task subtask) {
+//   Task currentTask = this;
+//   Map<String, dynamic> currentTaskMap = toJson();
+//   for (int index = 0; index < indices.length; index++) {
+//     currentTaskMap['subTasks'][index];
 
+//     // if (index >= 0 && index < currentTask.subTasks.length) {
+//     //   currentTask = currentTask.subTasks[index];
+//     // } else {
+//     //   // Handle the case where the index is out of bounds
+//     //   return;
+//     // }
+//   }
 
+//   // Add the subtask to the current task
+//   currentTask.subTasks.add(subtask);
+// }
 
+// // void addSubtaskByIndices(List<int> indices, Task subtask) {
+// //   indices.removeAt(0);
+// //   Task currentTask = this;
+// //   for (int i = 0; i < indices.length - 1; i++) {
+// //     final index = indices[i];
+// //     if (index < 0 || index >= currentTask.subTasks.length) {
+// //       return;
+// //     }
+// //     currentTask = currentTask.subTasks[index];
+// //   }
+// //   final lastIndex = indices.last;
+// //   if (lastIndex < 0 || lastIndex > currentTask.subTasks.length) {
+// //     return;
+// //   }
+// //   currentTask.subTasks.insert(lastIndex, subtask);
+// // }
 
+// void removeSubtaskByIndices(List<int> indices) {
+//   indices.removeAt(0);
+//   Task currentTask = this;
 
+//   for (int i = 0; i < indices.length - 1; i++) {
+//     final index = indices[i];
+//     if (index < 0 || index >= currentTask.subTasks.length) {
+//       return;
+//     }
+//     currentTask = currentTask.subTasks[index];
+//   }
 
+//   final lastIndex = indices.last;
+//   if (lastIndex < 0 || lastIndex >= currentTask.subTasks.length) {
+//     return;
+//   }
 
+//   currentTask.subTasks.removeAt(lastIndex);
+// }
 
+// void changeStateByIndices(List<int> indices) {
+//   indices.removeAt(0);
+//   Task currentTask = this;
 
+//   for (int i = 0; i < indices.length - 1; i++) {
+//     final index = indices[i];
+//     if (index < 0 || index >= currentTask.subTasks.length) {
+//       return;
+//     }
+//     currentTask = currentTask.subTasks[index];
+//   }
 
+//   final lastIndex = indices.last;
+//   if (lastIndex < 0 || lastIndex >= currentTask.subTasks.length) {
+//     return;
+//   }
 
+//   currentTask.subTasks[lastIndex].isDone =
+//       !currentTask.subTasks[lastIndex].isDone;
+// }
 
+// void increasePriorityByIndices(List<int> indices) {
+//   indices.removeAt(0);
+//   Task currentTask = this;
 
+//   for (int i = 0; i < indices.length - 1; i++) {
+//     final index = indices[i];
+//     if (index < 0 || index >= currentTask.subTasks.length) {
+//       return;
+//     }
+//     currentTask = currentTask.subTasks[index];
+//   }
 
+//   final lastIndex = indices.last;
+//   if (lastIndex < 0 || lastIndex >= currentTask.subTasks.length) {
+//     return;
+//   }
 
+//   currentTask.subTasks[lastIndex].priority++;
+// }
 
+// void decreasePriorityByIndices(List<int> indices) {
+//   indices.removeAt(0);
+//   Task currentTask = this;
 
+//   for (int i = 0; i < indices.length - 1; i++) {
+//     final index = indices[i];
+//     if (index < 0 || index >= currentTask.subTasks.length) {
+//       return;
+//     }
+//     currentTask = currentTask.subTasks[index];
+//   }
 
+//   final lastIndex = indices.last;
+//   if (lastIndex < 0 || lastIndex >= currentTask.subTasks.length) {
+//     return;
+//   }
 
-
-  // Task getItemFromIndices(List<int> indices) {
-  //   indices.removeAt(0);
-  //   Task currentTask = this;
-
-  //   for (final index in indices) {
-  //     if (index < 0 || index >= currentTask.subTasks.length) {
-  //       return currentTask;
-  //     }
-  //     currentTask = currentTask.subTasks[index];
-  //   }
-
-  //   return currentTask;
-  // }
-
-  // void addSubtaskByIndices(List<int> indices, Task subtask) {
-  //   Task currentTask = this;
-  //   Map<String, dynamic> currentTaskMap = toJson();
-  //   for (int index = 0; index < indices.length; index++) {
-  //     currentTaskMap['subTasks'][index];
-      
-  //     // if (index >= 0 && index < currentTask.subTasks.length) {
-  //     //   currentTask = currentTask.subTasks[index];
-  //     // } else {
-  //     //   // Handle the case where the index is out of bounds
-  //     //   return;
-  //     // }
-  //   }
-
-  //   // Add the subtask to the current task
-  //   currentTask.subTasks.add(subtask);
-  // }
-
-  // // void addSubtaskByIndices(List<int> indices, Task subtask) {
-  // //   indices.removeAt(0);
-  // //   Task currentTask = this;
-  // //   for (int i = 0; i < indices.length - 1; i++) {
-  // //     final index = indices[i];
-  // //     if (index < 0 || index >= currentTask.subTasks.length) {
-  // //       return;
-  // //     }
-  // //     currentTask = currentTask.subTasks[index];
-  // //   }
-  // //   final lastIndex = indices.last;
-  // //   if (lastIndex < 0 || lastIndex > currentTask.subTasks.length) {
-  // //     return;
-  // //   }
-  // //   currentTask.subTasks.insert(lastIndex, subtask);
-  // // }
-
-  // void removeSubtaskByIndices(List<int> indices) {
-  //   indices.removeAt(0);
-  //   Task currentTask = this;
-
-  //   for (int i = 0; i < indices.length - 1; i++) {
-  //     final index = indices[i];
-  //     if (index < 0 || index >= currentTask.subTasks.length) {
-  //       return;
-  //     }
-  //     currentTask = currentTask.subTasks[index];
-  //   }
-
-  //   final lastIndex = indices.last;
-  //   if (lastIndex < 0 || lastIndex >= currentTask.subTasks.length) {
-  //     return;
-  //   }
-
-  //   currentTask.subTasks.removeAt(lastIndex);
-  // }
-
-  // void changeStateByIndices(List<int> indices) {
-  //   indices.removeAt(0);
-  //   Task currentTask = this;
-
-  //   for (int i = 0; i < indices.length - 1; i++) {
-  //     final index = indices[i];
-  //     if (index < 0 || index >= currentTask.subTasks.length) {
-  //       return;
-  //     }
-  //     currentTask = currentTask.subTasks[index];
-  //   }
-
-  //   final lastIndex = indices.last;
-  //   if (lastIndex < 0 || lastIndex >= currentTask.subTasks.length) {
-  //     return;
-  //   }
-
-  //   currentTask.subTasks[lastIndex].isDone =
-  //       !currentTask.subTasks[lastIndex].isDone;
-  // }
-
-  // void increasePriorityByIndices(List<int> indices) {
-  //   indices.removeAt(0);
-  //   Task currentTask = this;
-
-  //   for (int i = 0; i < indices.length - 1; i++) {
-  //     final index = indices[i];
-  //     if (index < 0 || index >= currentTask.subTasks.length) {
-  //       return;
-  //     }
-  //     currentTask = currentTask.subTasks[index];
-  //   }
-
-  //   final lastIndex = indices.last;
-  //   if (lastIndex < 0 || lastIndex >= currentTask.subTasks.length) {
-  //     return;
-  //   }
-
-  //   currentTask.subTasks[lastIndex].priority++;
-  // }
-
-  // void decreasePriorityByIndices(List<int> indices) {
-  //   indices.removeAt(0);
-  //   Task currentTask = this;
-
-  //   for (int i = 0; i < indices.length - 1; i++) {
-  //     final index = indices[i];
-  //     if (index < 0 || index >= currentTask.subTasks.length) {
-  //       return;
-  //     }
-  //     currentTask = currentTask.subTasks[index];
-  //   }
-
-  //   final lastIndex = indices.last;
-  //   if (lastIndex < 0 || lastIndex >= currentTask.subTasks.length) {
-  //     return;
-  //   }
-
-  //   if (currentTask.subTasks[lastIndex].priority > 0) {
-  //     currentTask.subTasks[lastIndex].priority--;
-  //   }
-  // }
+//   if (currentTask.subTasks[lastIndex].priority > 0) {
+//     currentTask.subTasks[lastIndex].priority--;
+//   }
+// }

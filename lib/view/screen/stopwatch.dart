@@ -46,7 +46,8 @@ class StopWatch extends StatelessWidget {
                     },
                     child: Consumer<StopwatchModel>(
                       builder: (context, stopwatchModel, child) {
-                        return Text(stopwatchModel.isRunning ? 'Stop' : 'Start');
+                        return Text(
+                            stopwatchModel.isRunning ? 'Stop' : 'Start');
                       },
                     ),
                   ),

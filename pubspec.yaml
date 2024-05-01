@@ -8,9 +8,9 @@ environment:
 dependencies:
   action_slider: ^0.7.0
   awesome_dialog: ^3.1.0
-  # change_app_package_name: ^1.1.0
+  change_app_package_name: ^1.1.0
   cupertino_icons: ^1.0.2
-  # dartz: ^0.10.1
+  dartz: ^0.10.1
   flutter:
     sdk: flutter
   flutter_native_splash: ^2.3.2
@@ -27,9 +27,10 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
-# flutter pub run change_app_package_name:main com.amadytech.mytasks
+# flutter pub run change_app_package_name:main com.phoenixcode.mytasks
 # flutter pub get
 # dart run icons_launcher:create
+# dart run flutter_native_splash:create
 icons_launcher:
   image_path: "assets/images/ic_launcher.png"
   platforms:
