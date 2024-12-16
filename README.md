@@ -1,7 +1,5 @@
-My Tasks Project Setup
-======================
-
-For Developers Setup
+My Tasks App
+============
 
 Project Description
 -------------------
