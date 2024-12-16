@@ -57,10 +57,14 @@ Project Links
 *   [GitHub Repository](https://github.com/ahmed-eid-faried/mytasks)
 *   [Project Demo on YouTube](https://www.youtube.com/watch?v=qkkB0egPwqU&feature=youtu.be)
 
+* * *
+
+📢 Contact Information
+----------------------
+
 📧 Email: [ahmed\_mady22@icloud.com](mailto:ahmed_mady22@icloud.com)
 
 📞 Phone: [+201555663045](tel:+201555663045)
 
 🔗 [GitHub](https://github.com/ahmed-eid-faried) | [Portfolio](https://ahmed-eid-faried.github.io)
 
-© 2024 My Tasks. All rights reserved.
